@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*,
+*::after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 5%;
+  background-color: hsla(216, 100%, 60%, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+body {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../images/bg_image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#description {
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid hsl(12, 100%, 60%);
+  display: inline-block;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+
+#survey-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-style input {
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  margin-top: 5px;
+}
+
+.p-text,
+#dropdown-label,
+#name-label,
+#email-label,
+#number-label {
+  font-size: 1.2rem;
+}
+
+#dropdown {
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.radio-section,
+#checkbox-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.radio-section label,
+#checkbox-section label {
+  margin: 5px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.radio-section input,
+#checkbox-section input {
+  display: inline-block;
+  min-width: 1rem;
+  min-height: 1rem;
+  margin-right: 10px;
+}
+
+button {
+  background-color: hsl(12, 100%, 60%);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  padding: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+textarea {
+  font-size: 1rem;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  min-height: 100px;
+  resize: vertical;
+}

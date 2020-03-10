@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">Traveling</h1>
+      <p id="description">Tell us something about your adventure</p>
+      <form action="submit" id="survey-form">
+        <div class="form-style">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-style">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your e-mail"
+            required
+          />
+        </div>
+        <div class="form-style">
+          <label id="number-label" for="number">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="13"
+            max="99"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+        <div class="form-style">
+          <label id="dropdown-label" for="destinations"
+            >What is your favorit holidays destination?</label
+          >
+          <select name="destinations" id="dropdown">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="mountains">Mountains</option>
+            <option value="beaches">Beaches</option>
+            <option value="cities">Cities</option>
+            <option value="mountains">Deserts</option>
+          </select>
+        </div>
+        <div class="radio-section">
+          <p class="p-text">Who do you prefer to travel with?</p>
+          <label for="alone">
+            <input
+              type="radio"
+              value="alone"
+              name="user-recommend"
+              id="alone"
+            />Alone
+          </label>
+          <label for="partner">
+            <input
+              type="radio"
+              value="partner"
+              name="user-recommend"
+              id="partner"
+            />Partner
+          </label>
+          <label for="perents">
+            <input
+              type="radio"
+              value="perents"
+              name="user-recommend"
+              id="Perents"
+            />Perents
+          </label>
+          <label for="friends">
+            <input
+              type="radio"
+              value="friends"
+              name="user-recommend"
+              id="friends"
+            />Friends
+          </label>
+        </div>
+        <div id="checkbox-section">
+          <p class="p-text">
+            What is the most common item you forgot to take on holidays?
+          </p>
+          <label for="camera">
+            <input
+              type="checkbox"
+              name="camera"
+              id="camera"
+              value="camera"
+            />Camera
+          </label>
+          <label for="phone">
+            <input type="checkbox" name="phone" id="phone" value="phone" />Phone
+          </label>
+          <label for="documents">
+            <input
+              type="checkbox"
+              name="documents"
+              id="documents"
+              value="documents"
+            />Documents
+          </label>
+          <label for="charger">
+            <input
+              type="checkbox"
+              name="charger"
+              id="charger"
+              value="charger"
+            />Charger
+          </label>
+          <label for="sunscreen">
+            <input
+              type="checkbox"
+              name="sunscreen"
+              id="sunscreen"
+              value="sunscreen"
+            />Sunscreen
+          </label>
+        </div>
+        <textarea
+          name="textarea"
+          id="form-textarea"
+          placeholder="Enter your comment here"
+        ></textarea>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
